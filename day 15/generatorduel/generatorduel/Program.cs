@@ -28,9 +28,7 @@ namespace generatorduel
 
         static bool Match16Bits(ulong valueA, ulong valueB)
         {
-            ushort a = unchecked((ushort) valueA);
-            ushort b = unchecked((ushort) valueB);
-            return a == b;
+            return unchecked((ushort)valueA) == unchecked((ushort)valueB);
         }
     }
 }
